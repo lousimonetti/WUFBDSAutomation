@@ -34,7 +34,8 @@ function Get-Authentication()
     Add-Type -AssemblyName System.Web
     #$secret
     #UrlEscapeDataString($secret)
-    $tokenUrl = 'https://login.microsoftonline.com/c3e32f53-cb7f-4809-968d-1cc4ccc785fe/oauth2/v2.0/token'
+    $tenantID = '<your Entra ID tenant ID>'
+    $tokenUrl = 'https://login.microsoftonline.com/$($tenantid)/oauth2/v2.0/token'
     $secret = '<client secret here from Entra ID app registration>'
     $clientId = '<clientId here from Entra ID app registration>'
     $encodedSecret = [System.Web.HttpUtility]::UrlEncode($secret)
