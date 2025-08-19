@@ -141,7 +141,7 @@ Function Invoke-ApprovalOnPolicy()
 }
 
 ## for all policies, you could do the following: 
-$inludeFirmware = $false;
+$includeFirmware = $false;
 foreach ($policy in $policies) {
     if ($policy.approvalType -eq 'manual') {
         $policyId = $policy.Id;
