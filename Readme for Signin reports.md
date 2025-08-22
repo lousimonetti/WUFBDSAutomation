@@ -1,7 +1,3 @@
-I’ll create a PowerShell script that queries Entra ID sign-in logs for users from your CSV file, processes them in batches, and identifies shared vs unique devices.​​​​​​​​​​​​​​​​
-
-I’ve created a comprehensive PowerShell script that will analyze Entra ID sign-in logs to identify shared vs unique devices among your users. Here are the key features:
-
 ## Script Features:
 
 **Parameters:**
